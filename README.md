@@ -13,8 +13,8 @@ Here's a brief description of the columns:
 3. Purchase Type: The purchase type represents the mode of payment either it was made ‘online’ and ‘station’.
 4. Payment Method: This refers to the type of method that was used for payment.
 5. Railcard: 
-- Ticket Class: This refers to the type of ticket that was booked (standard/ First class).
-- Ticket Type: The type of ticket for the ride.
+6. Ticket Class: This refers to the type of ticket that was booked (standard/ First class).
+7. Ticket Type: The type of ticket for the ride.
 8. Price:  This refers to how much was paid to board a train.
 9. Departure Station: This is where the train took off / Passengers boarded a train
 10. Arrival Destination: This is the passenger’s chosen destination
@@ -50,8 +50,10 @@ Let’s look at the distribution of different payment methods used for ticket pu
 Analyzing the distribution of different ticket classes and types to understand customer preferences.
 The ticket class describes the type of ticket purchased by consumers with Standard class being prominent among the two classes of tickets.
 The Ticket type refers to when the ticket was bought or when the user can use the ticket, Advance ticket is 1/2 off and must be purchased at least a day prior to departure. Off-Peak tickets are 1/4 off and some users tickets are labeled ‘anytime’.
+
 ![alt text](image-5.png)
 ### Distribution of Ticket Prices
+
 The distribution of ticket prices to understand the pricing structure. We utilize a histogram chart to understand different amount that was paid by passengers. There is a variation in prices from passengers which is shown below;
 ![alt text](image-1.png)
 ### Journey Analysis
