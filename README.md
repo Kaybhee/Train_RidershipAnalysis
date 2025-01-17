@@ -83,7 +83,7 @@ The actual arrival time frequently differs from the arrival time, so this was al
 - Feature Scaling: The feature ‘Price’ has been standardized using StandardScaler to ensure better performance of machine learning model.
 The cleaned dataset now consists of 31653 entries and 9 columns with the price column being standardized, making it ready for any subsequent analysis or modeling tasks.
 ## Predictive Analysis
-We’ll train different models to see the model with the best performance, and I also performed cross validation technique using ‘kfold’. Random forest classifier tends to perform better, with better performance to predict whether the journey status is on-time, delayed or cancelled. See the python script above for prediction.
+Different models are trained to see the model with the best performance, and I also performed cross validation technique using ‘kfold’. Random forest classifier tends to perform better, with better performance to predict whether the journey status is on-time, delayed or cancelled. See the python script above for prediction.
 ## Model Results
 Data comes in the form of features and outcome, we want to build an algorithm that takes feature values as input and returns a prediction when we don’t know the actual outcome. Before modeling it is required that columns which does not influence the status of the journey are dropped, 8 columns were dropped before training the model.
 I used 80% while training the data and 20% for testing, this was done with the help of python libraries like ‘scikit’ learn.
