@@ -76,7 +76,7 @@ The dataset has missing values in the following columns:
 - Actual arrival time: 1880 missing values
 - Railcard: 20918 missing values
 ### Data Cleaning
-The dataset has been thoroughly clean and pre-processed as follows:
+The dataset has been thoroughly cleaned and pre-processed as follows:
 - Missing Values: Missing Values in the reason for delay, actual arrival time and railcard columns were observed that if the journey status is ‘On-time’ the reason for delay is filled with ‘Nan’ hence it was filled with ‘None’.
 The actual arrival time frequently differs from the arrival time, so this was also filled with None as the arrival time would suffice since it is not empty.
 - Encoding Categorical Variables: All categorical variables have been converted to numerical format using one hot encoder and label encoder is used for the target variable.
