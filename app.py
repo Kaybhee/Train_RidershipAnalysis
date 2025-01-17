@@ -5,15 +5,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder, StandardScaler, LabelEncoder
 from sklearn.metrics import accuracy_score
 
-# Title and description
+
 st.title("Journey Status Prediction App")
 st.write("This app predicts the Journey Status using machine learning!")
 
-# Load your dataset
+
 @st.cache_data
 def load_data():
-    # Assuming you have a CSV or can generate the dataset dynamically
-    data = pd.read_csv("railway.csv")  # Replace with actual data
+    data = pd.read_csv("railway.csv")  
     data["Reason for Delay"].fillna(value= 'None', inplace= True)
     data["Actual Arrival Time"].fillna(value= 'Unknown', inplace= True)
     data["Railcard"].fillna(value= 'none', inplace= True)
@@ -21,10 +20,6 @@ def load_data():
     return data
 
 data = load_data()
-
-
-# 27481 - 4172
-# Display dataset
 st.subheader('Dataset Preview')
 st.write(data.head())
 
@@ -46,14 +41,10 @@ X = one_hot_encoded_df
 # Splitting the data
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42, test_size=0.2)
 
-# Model Training (You can adjust to suit your selected model)
+
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
-
-# Input features from the user
 st.sidebar.subheader("Provide Input for Prediction")
-
-# Taking user input for all features
 purchase_type = st.sidebar.selectbox('Purchase Type', data['Purchase Type'].unique())
 payment_method = st.sidebar.selectbox('Payment Method', data['Payment Method'].unique())
 railcard = st.sidebar.selectbox('Railcard', data['Railcard'].unique())
@@ -77,7 +68,6 @@ input_data = pd.DataFrame({
     'Price': [price]
 })
 
-# Apply transformations
 input_data_encoded = encoder.transform(input_data[cat_variable])
 input_data_scaled = scaler.transform(input_data[['Price']])
 input_combined = pd.concat([pd.DataFrame(input_data_encoded), pd.DataFrame(input_data_scaled)], axis=1)
