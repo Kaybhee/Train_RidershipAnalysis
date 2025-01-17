@@ -38,41 +38,42 @@ The dataset has been successfully cleaned, with all missing values addressed. Th
 ## Exploratory Data Analysis (EDA)
 ### Purchase Patterns
 I will be analyzing the trends in ticket purchases over time, the distribution of purchase types, and payment methods.
-Trends in Ticket Purchases Over Time
+### Trends in Ticket Purchases Over Time
 This plots the number of ticket purchases over time to identify any patterns or trends. The graph below shows the payment distribution over time with February being the highest.
+
 ![alt text](image-7.png)
-## Distribution of Purchase Types
+### Distribution of Purchase Types
 Let’s look at the distribution of different payment methods used for ticket purchases, in the diagram below we have two different purchase patterns which is either done online or in the station. We can see that most payment were done online and some were also done at the station.
 ![alt text](image-6.png)
-## Ticket Characteristics
+### Ticket Characteristics
 ### Analysis of Ticket Classes and Types
 Analyzing the distribution of different ticket classes and types to understand customer preferences.
 The ticket class describes the type of ticket purchased by consumers with Standard class being prominent among the two classes of tickets.
 The Ticket type refers to when the ticket was bought or when the user can use the ticket, Advance ticket is 1/2 off and must be purchased at least a day prior to departure. Off-Peak tickets are 1/4 off and some users tickets are labeled ‘anytime’.
 ![alt text](image-5.png)
-## Distribution of Ticket Prices
+### Distribution of Ticket Prices
 The distribution of ticket prices to understand the pricing structure. We utilize a histogram chart to understand different amount that was paid by passengers. There is a variation in prices from passengers which is shown below;
 ![alt text](image-1.png)
-## Journey Analysis
-## Geographical Distribution of Journeys
+### Journey Analysis
+### Geographical Distribution of Journeys
 Analyzing the most popular routes and stations. This shows the popular routes with their respective arrival destination, the analysis involves displaying the top 10 departure and arrival station with Manchester piccadilly to Liverpool lime street being very popular.
 ![alt text](image.png)
-## Analysis of Journey Status
+### Analysis of Journey Status
 We'll look into the journey statuses to understand the proportion of on-time vs. delayed journeys. The journey status for passengers is either delayed, cancelled or on-time. The passengers have 1180 cancelled journey, 2292 delayed and 27481 on-time journeys, the focus will be when the journey is “delayed” or “cancelled”. Analysis is carried out to determine why the journey status is delayed or cancelled, weather and technical issues are the major reason for the train being delayed with counts being 758 and 472 respectively while Signal failure is the main reason the journey status is cancelled.
-## Distribution of Payment Method
+### Distribution of Payment Method
 This describes the type of payment method which was predominantly used, consumers made use of their credit cards compared to other means of payment.
 The least form of payment was the use of “Debit Card” for payment with 1,683 counts of users.
 ![alt text](image-3.png)
-## Expensive Routes
+### Expensive Routes
 This describes the top routes with their respective Prices. The most expensive route is Manchester piccadilly to London Euston with 267 being the ticket price while subsequent routes are ‘Reading’ to ‘Liverpool Lime Street’, ‘Liverpool Lime’ street to ‘London Paddington’, ‘London Euston to Manchester Piccadilly’, ‘London Kings Cross’ to ‘Liverpool Lime street’.
 Manchester Piccadilly is the departure station with some of the highest ticket prices with London Euston being the arrival destination with 203.
 ![alt text](image-2.png)
-## Missing Values
+### Missing Values
 The dataset has missing values in the following columns:
 - Reason for Delay: 27481 missing values
 - Actual arrival time: 1880 missing values
 - Railcard: 20918 missing values
-## Data Cleaning
+### Data Cleaning
 The dataset has been thoroughly clean and pre-processed as follows:
 - Missing Values: Missing Values in the reason for delay, actual arrival time and railcard columns were observed that if the journey status is ‘On-time’ the reason for delay is filled with ‘Nan’ hence it was filled with ‘None’.
 The actual arrival time frequently differs from the arrival time, so this was also filled with None as the arrival time would suffice since it is not empty.
