@@ -55,7 +55,7 @@ The Ticket type refers to when the ticket was bought or when the user can use th
 ### Distribution of Ticket Prices
 
 The distribution of ticket prices to understand the pricing structure. We utilize a histogram chart to understand different amount that was paid by passengers. There is a variation in prices from passengers which is shown below;
-![alt text](images/image-1.png)
+![alt text](Images/image-1.png)
 ### Journey Analysis
 ### Geographical Distribution of Journeys
 Analyzing the most popular routes and stations. This shows the popular routes with their respective arrival destination, the analysis involves displaying the top 10 departure and arrival station with Manchester piccadilly to Liverpool lime street being very popular.
